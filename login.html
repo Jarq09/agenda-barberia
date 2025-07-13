@@ -1,0 +1,35 @@
+<!-- Página de inicio de sesión -->
+<!-- login.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iniciar Sesión</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="main-container">
+    <div class="card">
+      <h1>Iniciar Sesión</h1>
+
+      <form id="loginForm" class="formulario">
+        <label for="correoLogin">Correo electrónico</label>
+        <input type="email" id="correoLogin" placeholder="Correo electrónico" required />
+
+        <label for="contrasenaLogin">Contraseña</label>
+        <input type="password" id="contrasenaLogin" placeholder="Contraseña" required />
+
+        <button type="submit">Ingresar</button>
+      </form>
+
+      <p>¿No tienes cuenta? <a href="register.html">Regístrate</a></p>
+    </div>
+  </div>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>
+
+
+

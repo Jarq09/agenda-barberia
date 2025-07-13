@@ -1,0 +1,36 @@
+<!-- Página donde el usuario ve y agenda sus citas -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agenda de Citas</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="main-container">
+    <div class="card">
+      <div class="header">
+        <h1>Agenda de Citas</h1>
+        <span id="bienvenida">Bienvenido</span>
+      </div>
+
+      <form id="formCita" class="formulario">
+        <input type="date" id="fecha" required />
+        <input type="time" id="hora" required />
+        <input type="text" id="servicio" placeholder="Servicio (ej: Corte, Barba...)" required />
+        <button type="submit">Agendar cita</button>
+      </form>
+
+      <div class="mis-citas">
+        <h2>Mis Citas</h2>
+        <ul id="listaCitas"></ul>
+      </div>
+
+      <button class="btn-danger" onclick="cerrarSesion()">Cerrar sesión</button>
+    </div>
+  </div>
+
+  <script src="js/citas.js"></script>
+</body>
+</html>
